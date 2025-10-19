@@ -2,7 +2,7 @@ package io.github.mcengine.extension.skript.essential.example;
 
 import io.github.mcengine.api.core.MCEngineCoreApi;
 import io.github.mcengine.api.core.extension.logger.MCEngineExtensionLogger;
-import io.github.mcengine.api.essential.extension.api.IMCEngineEssentialAPI;
+import io.github.mcengine.api.essential.extension.skript.IMCEngineEssentialSkript;
 
 import io.github.mcengine.extension.skript.essential.example.command.EssentialSkriptCommand;
 import io.github.mcengine.extension.skript.essential.example.listener.EssentialSkriptListener;
@@ -23,10 +23,9 @@ import java.util.List;
  * <p>
  * Registers the {@code /essentialskriptexample} command and related event listeners.
  * <p>
- * Note: Migrated from the previous “API” naming to “Skript” while preserving
- * {@link IMCEngineEssentialAPI} integration for compatibility.
+ * Integrates with the {@link IMCEngineEssentialSkript} lifecycle.
  */
-public class ExampleEssentialSkript implements IMCEngineEssentialAPI {
+public class ExampleEssentialSkript implements IMCEngineEssentialSkript {
 
     /** Custom extension logger for this module, with contextual labeling. */
     private MCEngineExtensionLogger logger;
