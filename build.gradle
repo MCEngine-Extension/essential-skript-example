@@ -11,6 +11,10 @@ ext {
     user_github_name = System.getenv('USER_GITHUB_NAME')
     user_github_token = System.getenv('USER_GITHUB_TOKEN')
 
+    // GitLab
+    user_gitlab_name = System.getenv('USER_GITLAB_NAME')
+    user_gitlab_token = System.getenv('USER_GITLAB_TOKEN')
+
     // Organization
     organization_id = System.getenv('ORGANIZATION_ID')
     organization_name = System.getenv('ORGANIZATION_NAME') ?: 'MCEngine-Extension'
@@ -18,7 +22,7 @@ ext {
 
     // Repository
     repository_id = System.getenv('REPOSITORY_ID')
-    repository_name = System.getenv('REPOSITORY_NAME') ?: 'essential-skript-example'
+    repository_name = System.getenv('REPOSITORY_NAME') ?: 'essential-addon-example'
     repository_token = System.getenv('REPOSITORY_TOKEN')
 
     jarName = System.getenv('PROJECT_NAME') ?: 'EssentialExampleSkript'
